@@ -188,16 +188,4 @@ Farm.create!([{
   area:
   chicken_count:
 },
-
-
-
-
-
-
-
-
-
-
-
-
 ])
