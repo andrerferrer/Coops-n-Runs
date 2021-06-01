@@ -12,6 +12,13 @@ Farm.create!([{
   country: "Germany",
   laying_farm: "0814401"
   address: "Im Roßgraben 1, 77723 Gengenbach-Schönberg",
+  latitude:
+  longitude:
+  user_id:
+  created_at:
+  updated_at:
+  area:
+  chicken_count:
   website_url: "https://www.gefluegelhof-zapf.de"
 },
 {
@@ -20,6 +27,13 @@ Farm.create!([{
   country: "Germany",
   laying_farm: "0801551"
   address: "Im Roßgraben 1, 77723 Gengenbach-Schönberg",
+  latitude:
+  longitude:
+  user_id:
+  created_at:
+  updated_at:
+  area:
+  chicken_count:
   website_url: "https://www.gefluegelhof-zapf.de"
 },
 {
@@ -28,6 +42,13 @@ Farm.create!([{
   country: "Germany",
   laying_farm: "0814351"
   address: "Fröschbach",
+  latitude:
+  longitude:
+  user_id:
+  created_at:
+  updated_at:
+  area:
+  chicken_count:
   website_url: "https://www.gefluegelhof-zapf.de"
 },
 {
@@ -36,6 +57,13 @@ Farm.create!([{
   country: "Germany",
   laying_farm: "0814352"
   address: "Fröschbach",
+  latitude:
+  longitude:
+  user_id:
+  created_at:
+  updated_at:
+  area:
+  chicken_count:
   website_url: "https://www.gefluegelhof-zapf.de"
 },
 {
@@ -44,6 +72,13 @@ Farm.create!([{
   country: "Germany",
   laying_farm: "0814353"
   address: "Fröschbach",
+  latitude:
+  longitude:
+  user_id:
+  created_at:
+  updated_at:
+  area:
+  chicken_count:
   website_url: "https://www.gefluegelhof-zapf.de"
 },
 {
@@ -52,6 +87,13 @@ Farm.create!([{
   country: "Germany",
   laying_farm: ""
   address: "Unterer Berghof, 72218 Wildberg",
+  latitude:
+  longitude:
+  user_id:
+  created_at:
+  updated_at:
+  area:
+  chicken_count:
   chicken_count: "1950"
   website_url: "https://www.unterer-berghof.de"
 },
@@ -61,6 +103,13 @@ Farm.create!([{
   country: "Germany",
   laying_farm: "0812691"
   address: "Kaiserstuhlstraße 1, 79279 Vörstetten",
+  latitude:
+  longitude:
+  user_id:
+  created_at:
+  updated_at:
+  area:
+  chicken_count:
   chicken_count: "14500"
   website_url:
 },
@@ -70,6 +119,14 @@ Farm.create!([{
   country: "Germany",
   laying_farm: "0819511"
   address: "Bräunlingen",
+  latitude:
+  longitude:
+  user_id:
+  created_at:
+  updated_at:
+  area:
+  chicken_count:
+  website_url:
 },
 {
   name: "Schäfer Hof",
@@ -77,6 +134,14 @@ Farm.create!([{
   country: "Germany",
   laying_farm: "0808912 "
   address: "Kehl Marlen",
+  latitude:
+  longitude:
+  user_id:
+  created_at:
+  updated_at:
+  area:
+  chicken_count:
+  website_url:
 },
 {
   name: "Schäfer Hof",
@@ -84,6 +149,14 @@ Farm.create!([{
   country: "Germany",
   laying_farm: "0808913"
   address: "Kehl Marlen",
+  latitude:
+  longitude:
+  user_id:
+  created_at:
+  updated_at:
+  area:
+  chicken_count:
+  website_url:
 },
 {
   name: "Geflügelhof Ruh",
@@ -91,6 +164,13 @@ Farm.create!([{
   country: "Germany",
   laying_farm: "0806972"
   address: "Lindenhof 1, 78244 Gottmadingen",
+  latitude:
+  longitude:
+  user_id:
+  created_at:
+  updated_at:
+  area:
+  chicken_count:
   chicken_count: "1600"
   website_url: "https://gefluegelhof-ruh.de"
 },
@@ -100,6 +180,14 @@ Farm.create!([{
   country: "Germany",
   laying_farm: "0817832"
   address: "Schutterzell",
+  latitude:
+  longitude:
+  user_id:
+  created_at:
+  updated_at:
+  area:
+  chicken_count:
+  website_url:
 },
 {
   name: "Eierhof Heitzmann",
@@ -107,6 +195,14 @@ Farm.create!([{
   country: "Germany",
   laying_farm: "0817831"
   address: "Schutterzell",
+  latitude:
+  longitude:
+  user_id:
+  created_at:
+  updated_at:
+  area:
+  chicken_count:
+  website_url:
 },
 {
   name: "Rhönland eG",
@@ -114,7 +210,14 @@ Farm.create!([{
   country: "Germany",
   laying_farm: "1602018"
   address: "Am Lindig 1, 36466 Dermbach",
-  website_url: "https://www.rhoenland-hof.de/home.html"
+  latitude:
+  longitude:
+  user_id:
+  created_at:
+  updated_at:
+  area:
+  chicken_count:
+  website_url:
 },
 {
   name: "Rhönland eG",
@@ -122,6 +225,13 @@ Farm.create!([{
   country: "Germany",
   laying_farm: "1602013"
   address: "Am Lindig 1, 36466 Dermbach",
+  latitude:
+  longitude:
+  user_id:
+  created_at:
+  updated_at:
+  area:
+  chicken_count: ""
   website_url: "https://www.rhoenland-hof.de/home.html"
 },
 {
@@ -130,6 +240,13 @@ Farm.create!([{
   country: "Germany",
   laying_farm: "1602016"
   address: "Am Lindig 1, 36466 Dermbach",
+  latitude:
+  longitude:
+  user_id:
+  created_at:
+  updated_at:
+  area:
+  chicken_count: ""
   website_url: "https://www.rhoenland-hof.de/home.html"
 },
 {
@@ -138,6 +255,13 @@ Farm.create!([{
   country: "Germany",
   laying_farm: "1602011"
   address: "Am Lindig 1, 36466 Dermbach",
+  latitude:
+  longitude:
+  user_id:
+  created_at:
+  updated_at:
+  area:
+  chicken_count: ""
   website_url: "https://www.rhoenland-hof.de/home.html"
 },
 {
@@ -146,13 +270,28 @@ Farm.create!([{
   country: "Germany",
   laying_farm: "1602012"
   address: "Am Lindig 1, 36466 Dermbach",
+  latitude:
+  longitude:
+  user_id:
+  created_at:
+  updated_at:
+  area:
+  chicken_count: ""
   website_url: "https://www.rhoenland-hof.de/home.html"
+},
 {
   name: "Rhönland eG",
   form_of_rearing: "Barn Rearing",
   country: "Germany",
   laying_farm: "1602014"
   address: "Am Lindig 1, 36466 Dermbach",
+  latitude:
+  longitude:
+  user_id:
+  created_at:
+  updated_at:
+  area:
+  chicken_count: ""
   website_url: "https://www.rhoenland-hof.de/home.html"
 },
 {
@@ -161,6 +300,13 @@ Farm.create!([{
   country: "Germany",
   laying_farm: "1602015"
   address: "Am Lindig 1, 36466 Dermbach",
+  latitude:
+  longitude:
+  user_id:
+  created_at:
+  updated_at:
+  area:
+  chicken_count: ""
   website_url: "https://www.rhoenland-hof.de/home.html"
 },
 {
@@ -169,6 +315,13 @@ Farm.create!([{
   country: "Germany",
   laying_farm: "1602017"
   address: "Am Lindig 1, 36466 Dermbach",
+  latitude:
+  longitude:
+  user_id:
+  created_at:
+  updated_at:
+  area:
+  chicken_count: ""
   website_url: "https://www.rhoenland-hof.de/home.html"
 },
 {
@@ -177,8 +330,16 @@ Farm.create!([{
   country: "Germany",
   laying_farm: "1300112"
   address: "17209 Melz/Karbow",
+  latitude:
+  longitude:
+  user_id:
+  created_at:
+  updated_at:
+  area:
+  chicken_count: ""
 }
 ])
+
 
 User.create!([
  {first_name: "Christian", last_name: "Boehme", email: "christian@lewagon.com", encrypted_password: "123456"},
