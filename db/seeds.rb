@@ -19,6 +19,7 @@ Farm.create!([{
   updated_at:
   area:
   chicken_count:
+  website_url: "https://www.gefluegelhof-zapf.de"
 },
 {
   name: "Geflügelhof Martin Zapf",
@@ -33,6 +34,7 @@ Farm.create!([{
   updated_at:
   area:
   chicken_count:
+  website_url: "https://www.gefluegelhof-zapf.de"
 },
 {
   name: "Geflügelhof Martin Zapf",
@@ -47,6 +49,7 @@ Farm.create!([{
   updated_at:
   area:
   chicken_count:
+  website_url: "https://www.gefluegelhof-zapf.de"
 },
 {
   name: "Geflügelhof Martin Zapf",
@@ -61,6 +64,7 @@ Farm.create!([{
   updated_at:
   area:
   chicken_count:
+  website_url: "https://www.gefluegelhof-zapf.de"
 },
 {
   name: "Geflügelhof Martin Zapf",
@@ -75,6 +79,7 @@ Farm.create!([{
   updated_at:
   area:
   chicken_count:
+  website_url: "https://www.gefluegelhof-zapf.de"
 },
 {
   name: "Geflügelhof Unterer Berghof",
@@ -89,6 +94,7 @@ Farm.create!([{
   updated_at:
   area:
   chicken_count: "1950"
+  website_url: "https://www.unterer-berghof.de"
 },
 {
   name: "Nock-Hof",
@@ -103,6 +109,7 @@ Farm.create!([{
   updated_at:
   area:
   chicken_count: "14500"
+  website_url:
 },
 {
   name: "Biohof Breghof",
@@ -117,6 +124,7 @@ Farm.create!([{
   updated_at:
   area:
   chicken_count:
+  website_url:
 },
 {
   name: "Schäfer Hof",
@@ -131,6 +139,7 @@ Farm.create!([{
   updated_at:
   area:
   chicken_count:
+  website_url:
 },
 {
   name: "Schäfer Hof",
@@ -145,6 +154,7 @@ Farm.create!([{
   updated_at:
   area:
   chicken_count:
+  website_url:
 },
 {
   name: "Geflügelhof Ruh",
@@ -159,6 +169,7 @@ Farm.create!([{
   updated_at:
   area:
   chicken_count: "1600"
+  website_url: "https://gefluegelhof-ruh.de"
 },
 {
   name: "Eierhof Heitzmann",
@@ -173,6 +184,7 @@ Farm.create!([{
   updated_at:
   area:
   chicken_count:
+  website_url:
 },
 {
   name: "Eierhof Heitzmann",
@@ -187,5 +199,140 @@ Farm.create!([{
   updated_at:
   area:
   chicken_count:
+  website_url:
 },
+{
+  name: "Rhönland eG",
+  form_of_rearing: "Freilandhaltung",
+  country: "Deutschland",
+  laying_farm: "1602018"
+  address: "Am Lindig 1, 36466 Dermbach",
+  latitude:
+  longitude:
+  user_id:
+  created_at:
+  updated_at:
+  area:
+  chicken_count: ""
+  website_url: "https://www.rhoenland-hof.de/home.html"
+},
+{
+  name: "Rhönland eG",
+  form_of_rearing: "Freilandhaltung",
+  country: "Deutschland",
+  laying_farm: "1602013"
+  address: "Am Lindig 1, 36466 Dermbach",
+  latitude:
+  longitude:
+  user_id:
+  created_at:
+  updated_at:
+  area:
+  chicken_count: ""
+  website_url: "https://www.rhoenland-hof.de/home.html"
+},
+{
+  name: "Rhönland eG",
+  form_of_rearing: "Freilandhaltung",
+  country: "Deutschland",
+  laying_farm: "1602016"
+  address: "Am Lindig 1, 36466 Dermbach",
+  latitude:
+  longitude:
+  user_id:
+  created_at:
+  updated_at:
+  area:
+  chicken_count: ""
+  website_url: "https://www.rhoenland-hof.de/home.html"
+},
+{
+  name: "Rhönland eG",
+  form_of_rearing: "Bodenhaltung",
+  country: "Deutschland",
+  laying_farm: "1602011"
+  address: "Am Lindig 1, 36466 Dermbach",
+  latitude:
+  longitude:
+  user_id:
+  created_at:
+  updated_at:
+  area:
+  chicken_count: ""
+  website_url: "https://www.rhoenland-hof.de/home.html"
+},
+{
+  name: "Rhönland eG",
+  form_of_rearing: "Bodenhaltung",
+  country: "Deutschland",
+  laying_farm: "1602012"
+  address: "Am Lindig 1, 36466 Dermbach",
+  latitude:
+  longitude:
+  user_id:
+  created_at:
+  updated_at:
+  area:
+  chicken_count: ""
+  website_url: "https://www.rhoenland-hof.de/home.html"
+{
+  name: "Rhönland eG",
+  form_of_rearing: "Bodenhaltung",
+  country: "Deutschland",
+  laying_farm: "1602014"
+  address: "Am Lindig 1, 36466 Dermbach",
+  latitude:
+  longitude:
+  user_id:
+  created_at:
+  updated_at:
+  area:
+  chicken_count: ""
+  website_url: "https://www.rhoenland-hof.de/home.html"
+},
+{
+  name: "Rhönland eG",
+  form_of_rearing: "Bodenhaltung",
+  country: "Deutschland",
+  laying_farm: "1602015"
+  address: "Am Lindig 1, 36466 Dermbach",
+  latitude:
+  longitude:
+  user_id:
+  created_at:
+  updated_at:
+  area:
+  chicken_count: ""
+  website_url: "https://www.rhoenland-hof.de/home.html"
+},
+{
+  name: "Rhönland eG",
+  form_of_rearing: "Bodenhaltung",
+  country: "Deutschland",
+  laying_farm: "1602017"
+  address: "Am Lindig 1, 36466 Dermbach",
+  latitude:
+  longitude:
+  user_id:
+  created_at:
+  updated_at:
+  area:
+  chicken_count: ""
+  website_url: "https://www.rhoenland-hof.de/home.html"
+},
+{
+  name: "Farm Karbow II",
+  form_of_rearing: "Freilandhaltung",
+  country: "Deutschland",
+  laying_farm: "1300112"
+  address: "17209 Melz/Karbow",
+  latitude:
+  longitude:
+  user_id:
+  created_at:
+  updated_at:
+  area:
+  chicken_count:
+  website_url:
+}
 ])
