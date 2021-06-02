@@ -4,8 +4,7 @@ class FarmsController < ApplicationController
   before_action :set_farm, only: [:show, :edit]
 
   def show
-    @farm = Farm.find(parans[:id])
-    authorize @farm
+    # authorize @farm
   end
 
   def index
@@ -44,10 +43,4 @@ end
 #     t.index ["user_id"], name: "index_farms_on_user_id"
 #   end
 
-# belongs_to :user
-#   validates :name, presence: true
-#   validates :form_of_rearing, presence: true, acceptance: { accept: [0, 1, 2] }
-#   validates :country, presence: true, length: { is: 2 }
-#   validates :laying_farm, presence: true, length: { minimun: 5 }
-#   validates :address, presence: true
-# end
+
