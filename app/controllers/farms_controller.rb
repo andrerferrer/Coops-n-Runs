@@ -8,6 +8,14 @@ class FarmsController < ApplicationController
     authorize @farm
   end
 
+  def index
+    if params[:query].present?
+      @farms = Farm.where("name ILIKE @@ :query OR syllabus ILIKE :query", query: "%{params[:query]}%")
+    else
+      @farms = Farm.all
+    end
+  end
+
   private
 
   def set_farm
@@ -17,7 +25,6 @@ class FarmsController < ApplicationController
   def farm_params
     params.require(:farm).permit(:name, :form_of_rearing, :country, :laying_farm, :address, :latitude, :longitude, :user_id, :area, :chicken_count, :website_url)
   end
-
 end
 
 # create_table "farms", force: :cascade do |t|
