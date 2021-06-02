@@ -5,344 +5,349 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+User.destroy_all
+Farm.destroy_all
 
-Farm.create!([{
+puts 'creating users'
+User.create! ([
+ {first_name: "Christian", last_name: "Boehme", email: "christian@lewagon.com", password: "123456"},
+ {first_name: "Györgyi", last_name: "Farkas", email: "györgyi@lewagon.com", password: "123456"},
+ {first_name: "Lisa", last_name: "Keßler", email: "lisa@lewagon.com", password: "123456"}
+])
+
+puts 'creating farms'
+Farm.create! ([{
   name: "Geflügelhof Martin Zapf",
   form_of_rearing: "Free-range Rearing",
   country: "Germany",
-  laying_farm: "0814401"
+  laying_farm: "0814401",
   address: "Im Roßgraben 1, 77723 Gengenbach-Schönberg",
-  latitude:
-  longitude:
-  user_id:
-  created_at:
-  updated_at:
-  area:
-  chicken_count:
+  # latitude:
+  # longitude:
+  user_id: User.all.sample.id,
+  # created_at:
+  # updated_at:
+  # area:
+  # chicken_count:
   website_url: "https://www.gefluegelhof-zapf.de"
 },
 {
   name: "Geflügelhof Martin Zapf",
   form_of_rearing: "Barn Rearing",
   country: "Germany",
-  laying_farm: "0801551"
+  laying_farm: "0801551",
   address: "Im Roßgraben 1, 77723 Gengenbach-Schönberg",
-  latitude:
-  longitude:
-  user_id:
-  created_at:
-  updated_at:
-  area:
-  chicken_count:
+  # latitude:
+  # longitude:
+  user_id: User.all.sample.id,
+  # created_at:
+  # updated_at:
+  # area:
+  # chicken_count:
   website_url: "https://www.gefluegelhof-zapf.de"
 },
 {
   name: "Geflügelhof Martin Zapf",
   form_of_rearing: "Barn Rearing",
   country: "Germany",
-  laying_farm: "0814351"
+  laying_farm: "0814351",
   address: "Fröschbach",
-  latitude:
-  longitude:
-  user_id:
-  created_at:
-  updated_at:
-  area:
-  chicken_count:
+  # latitude:
+  # longitude:
+  user_id: User.all.sample.id,
+  # created_at:
+  # updated_at:
+  # area:
+  # chicken_count:
   website_url: "https://www.gefluegelhof-zapf.de"
 },
 {
   name: "Geflügelhof Martin Zapf",
   form_of_rearing: "Barn Rearing",
   country: "Germany",
-  laying_farm: "0814352"
+  laying_farm: "0814352",
   address: "Fröschbach",
-  latitude:
-  longitude:
-  user_id:
-  created_at:
-  updated_at:
-  area:
-  chicken_count:
+  # latitude:
+  # longitude:
+  user_id: User.all.sample.id,
+  # created_at:
+  # updated_at:
+  # area:
+  # chicken_count:
   website_url: "https://www.gefluegelhof-zapf.de"
 },
 {
   name: "Geflügelhof Martin Zapf",
   form_of_rearing: "Free-range Rearing",
   country: "Germany",
-  laying_farm: "0814353"
+  laying_farm: "0814353",
   address: "Fröschbach",
-  latitude:
-  longitude:
-  user_id:
-  created_at:
-  updated_at:
-  area:
-  chicken_count:
+  # latitude:
+  # longitude:
+  user_id: User.all.sample.id,
+  # created_at:
+  # updated_at:
+  # area:
+  # chicken_count:
   website_url: "https://www.gefluegelhof-zapf.de"
 },
-{
-  name: "Geflügelhof Unterer Berghof",
-  form_of_rearing: "Organic Rearing",
-  country: "Germany",
-  laying_farm: ""
-  address: "Unterer Berghof, 72218 Wildberg",
-  latitude:
-  longitude:
-  user_id:
-  created_at:
-  updated_at:
-  area:
-  chicken_count:
-  chicken_count: "1950"
-  website_url: "https://www.unterer-berghof.de"
-},
+# {
+#   name: "Geflügelhof Unterer Berghof",
+#   form_of_rearing: "Organic Rearing",
+#   country: "Germany",
+#   # laying_farm: "",
+#   address: "Unterer Berghof, 72218 Wildberg",
+#   # latitude:
+#   # longitude:
+#   # user_id:
+#   # created_at:
+#   # updated_at:
+#   # area:
+#   # chicken_count:
+#   chicken_count: "1950"
+#   website_url: "https://www.unterer-berghof.de"
+# },
 {
   name: "Nock-Hof",
   form_of_rearing: "Organic Rearing",
   country: "Germany",
-  laying_farm: "0812691"
+  laying_farm: "0812691",
   address: "Kaiserstuhlstraße 1, 79279 Vörstetten",
-  latitude:
-  longitude:
-  user_id:
-  created_at:
-  updated_at:
-  area:
-  chicken_count:
+  # latitude:
+  # longitude:
+  user_id: User.all.sample.id,
+  # created_at:
+  # updated_at:
+  # area:
+  # chicken_count:
   chicken_count: "14500"
-  website_url:
+  # website_url:
 },
 {
   name: "Biohof Breghof",
   form_of_rearing: "Organic Rearing",
   country: "Germany",
-  laying_farm: "0819511"
+  laying_farm: "0819511",
   address: "Bräunlingen",
-  latitude:
-  longitude:
-  user_id:
-  created_at:
-  updated_at:
-  area:
-  chicken_count:
-  website_url:
+  # latitude:
+  # longitude:
+  user_id: User.all.sample.id,
+  # created_at:
+  # updated_at:
+  # area:
+  # chicken_count:
+  # website_url:
 },
 {
   name: "Schäfer Hof",
   form_of_rearing: "Free-range Rearing",
   country: "Germany",
-  laying_farm: "0808912 "
+  laying_farm: "0808912",
   address: "Kehl Marlen",
-  latitude:
-  longitude:
-  user_id:
-  created_at:
-  updated_at:
-  area:
-  chicken_count:
-  website_url:
+  # latitude:
+  # longitude:
+  user_id: User.all.sample.id,
+  # created_at:
+  # updated_at:
+  # area:
+  # chicken_count:
+  # website_url:
 },
 {
   name: "Schäfer Hof",
   form_of_rearing: "Free-range Rearing",
   country: "Germany",
-  laying_farm: "0808913"
+  laying_farm: "0808913",
   address: "Kehl Marlen",
-  latitude:
-  longitude:
-  user_id:
-  created_at:
-  updated_at:
-  area:
-  chicken_count:
-  website_url:
+  # latitude:
+  # longitude:
+  user_id: User.all.sample.id,
+  # created_at:
+  # updated_at:
+  # area:
+  # chicken_count:
+  # website_url:
 },
 {
   name: "Geflügelhof Ruh",
   form_of_rearing: "Barn Rearing",
   country: "Germany",
-  laying_farm: "0806972"
+  laying_farm: "0806972",
   address: "Lindenhof 1, 78244 Gottmadingen",
-  latitude:
-  longitude:
-  user_id:
-  created_at:
-  updated_at:
-  area:
-  chicken_count:
-  chicken_count: "1600"
+  # latitude:
+  # longitude:
+  user_id: User.all.sample.id,
+  # created_at:
+  # updated_at:
+  # area:
+  # chicken_count:
+  chicken_count: "1600",
   website_url: "https://gefluegelhof-ruh.de"
 },
 {
   name: "Eierhof Heitzmann",
   form_of_rearing: "Barn Rearing",
   country: "Germany",
-  laying_farm: "0817832"
+  laying_farm: "0817832",
   address: "Schutterzell",
-  latitude:
-  longitude:
-  user_id:
-  created_at:
-  updated_at:
-  area:
-  chicken_count:
-  website_url:
+  # latitude:
+  # longitude:
+  user_id: User.all.sample.id,
+  # created_at:
+  # updated_at:
+  # area:
+  # chicken_count:
+  # website_url:
 },
 {
   name: "Eierhof Heitzmann",
   form_of_rearing: "Free-range Rearing",
   country: "Germany",
-  laying_farm: "0817831"
+  laying_farm: "0817831",
   address: "Schutterzell",
-  latitude:
-  longitude:
-  user_id:
-  created_at:
-  updated_at:
-  area:
-  chicken_count:
-  website_url:
+  # latitude:
+  # longitude:
+  user_id: User.all.sample.id,
+  # created_at:
+  # updated_at:
+  # area:
+  # chicken_count:
+  # website_url:
 },
 {
   name: "Rhönland eG",
   form_of_rearing: "Free-range Rearing",
   country: "Germany",
-  laying_farm: "1602018"
+  laying_farm: "1602018",
   address: "Am Lindig 1, 36466 Dermbach",
-  latitude:
-  longitude:
-  user_id:
-  created_at:
-  updated_at:
-  area:
-  chicken_count:
-  website_url:
+  # latitude:
+  # longitude:
+  user_id: User.all.sample.id,
+  # created_at:
+  # updated_at:
+  # area:
+  # chicken_count:
+  # website_url:
 },
 {
   name: "Rhönland eG",
   form_of_rearing: "Free-range Rearing",
   country: "Germany",
-  laying_farm: "1602013"
+  laying_farm: "1602013",
   address: "Am Lindig 1, 36466 Dermbach",
-  latitude:
-  longitude:
-  user_id:
-  created_at:
-  updated_at:
-  area:
-  chicken_count: ""
+  # latitude:
+  # longitude:
+  user_id: User.all.sample.id,
+  # created_at:
+  # updated_at:
+  # area:
+  # chicken_count: ""
   website_url: "https://www.rhoenland-hof.de/home.html"
 },
 {
   name: "Rhönland eG",
   form_of_rearing: "Free-range Rearing",
   country: "Germany",
-  laying_farm: "1602016"
+  laying_farm: "1602016",
   address: "Am Lindig 1, 36466 Dermbach",
-  latitude:
-  longitude:
-  user_id:
-  created_at:
-  updated_at:
-  area:
-  chicken_count: ""
+  # latitude:
+  # longitude:
+  user_id: User.all.sample.id,
+  # created_at:
+  # updated_at:
+  # area:
+  # chicken_count: ""
   website_url: "https://www.rhoenland-hof.de/home.html"
 },
 {
   name: "Rhönland eG",
   form_of_rearing: "Barn Rearing",
   country: "Germany",
-  laying_farm: "1602011"
+  laying_farm: "1602011",
   address: "Am Lindig 1, 36466 Dermbach",
-  latitude:
-  longitude:
-  user_id:
-  created_at:
-  updated_at:
-  area:
-  chicken_count: ""
+  # latitude:
+  # longitude:
+  user_id: User.all.sample.id,
+  # created_at:
+  # updated_at:
+  # area:
+  # chicken_count: ""
   website_url: "https://www.rhoenland-hof.de/home.html"
 },
 {
   name: "Rhönland eG",
   form_of_rearing: "Barn Rearing",
   country: "Germany",
-  laying_farm: "1602012"
+  laying_farm: "1602012",
   address: "Am Lindig 1, 36466 Dermbach",
-  latitude:
-  longitude:
-  user_id:
-  created_at:
-  updated_at:
-  area:
-  chicken_count: ""
+  # latitude:
+  # longitude:
+  user_id: User.all.sample.id,
+  # created_at:
+  # updated_at:
+  # area:
+  # chicken_count: ""
   website_url: "https://www.rhoenland-hof.de/home.html"
 },
 {
   name: "Rhönland eG",
   form_of_rearing: "Barn Rearing",
   country: "Germany",
-  laying_farm: "1602014"
+  laying_farm: "1602014",
   address: "Am Lindig 1, 36466 Dermbach",
-  latitude:
-  longitude:
-  user_id:
-  created_at:
-  updated_at:
-  area:
-  chicken_count: ""
+  # latitude:
+  # longitude:
+  user_id: User.all.sample.id,
+  # created_at:
+  # updated_at:
+  # area:
+  # chicken_count: ""
   website_url: "https://www.rhoenland-hof.de/home.html"
 },
 {
   name: "Rhönland eG",
   form_of_rearing: "Barn Rearing",
   country: "Germany",
-  laying_farm: "1602015"
+  laying_farm: "1602015",
   address: "Am Lindig 1, 36466 Dermbach",
-  latitude:
-  longitude:
-  user_id:
-  created_at:
-  updated_at:
-  area:
-  chicken_count: ""
+  # latitude:
+  # longitude:
+  user_id: User.all.sample.id,
+  # created_at:
+  # updated_at:
+  # area:
+  # chicken_count: ""
   website_url: "https://www.rhoenland-hof.de/home.html"
 },
 {
   name: "Rhönland eG",
   form_of_rearing: "Barn Rearing",
   country: "Germany",
-  laying_farm: "1602017"
+  laying_farm: "1602017",
   address: "Am Lindig 1, 36466 Dermbach",
-  latitude:
-  longitude:
-  user_id:
-  created_at:
-  updated_at:
-  area:
-  chicken_count: ""
+  # latitude:
+  # longitude:
+  user_id: User.all.sample.id,
+  # created_at:
+  # updated_at:
+  # area:
+  # chicken_count: ""
   website_url: "https://www.rhoenland-hof.de/home.html"
 },
 {
   name: "Farm Karbow II",
   form_of_rearing: "Free-range Rearing",
   country: "Germany",
-  laying_farm: "1300112"
+  laying_farm: "1300112",
   address: "17209 Melz/Karbow",
-  latitude:
-  longitude:
-  user_id:
-  created_at:
-  updated_at:
-  area:
-  chicken_count: ""
+  # latitude:
+  # longitude:
+  user_id: User.all.sample.id,
+  # created_at:
+  # updated_at:
+  # area:
+  # chicken_count: ""
 }
 ])
 
-
-User.create!([
- {first_name: "Christian", last_name: "Boehme", email: "christian@lewagon.com", encrypted_password: "123456"},
- {first_name: "Györgyi", last_name: "Farkas", email: "györgyi@lewagon.com", encrypted_password: "123456"},
- {first_name: "Lisa", last_name: "Keßler", email: "lisa@lewagon.com", encrypted_password: "123456"}
-])
+puts 'We are ready'
