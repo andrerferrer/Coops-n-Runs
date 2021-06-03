@@ -3,15 +3,21 @@ class FarmsController < ApplicationController
   skip_before_action :authenticate_user!, only: [:index, :show]
   before_action :set_farm, only: [:show, :edit]
 
-  def show
-    # authorize @farm
-  end
-
   def index
     if params[:query].present?
       @farms = Farm.where("name ILIKE @@ :query OR syllabus ILIKE :query", query: "%{params[:query]}%")
     else
       @farms = Farm.all
+    end
+  end
+
+  def show
+    # authorize @farm
+    @marker = @farm.geocoded do |farm|
+      {
+        lat: farm.latitude,
+        lng: farm.longitude
+      }
     end
   end
 
