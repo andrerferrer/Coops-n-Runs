@@ -1,6 +1,5 @@
 <div class ="container">
   <h2><%= @farm.name %></h2>
-
   <div class="d-flex flex-row">
     <div class="col-sm-8">
       <div class ="p-2">
@@ -14,8 +13,6 @@
         <p><%= @farm.website_url %></p>
       </div>
   </div>
-
-
    <div class="d-flex flex-row justify-content-between">
     <div class="p-2">icon 1</div>
     <div class="p-2">icon item 2</div>
@@ -23,3 +20,8 @@
   </div>
 </div>
 
+<div id="map"
+     style="width: 360px; height: 240px;"
+     data-marker="<%= @marker.to_json %>"
+     data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
+</div>
