@@ -1,25 +1,25 @@
 <div class ="container">
-  <h2><%= @farm.name %></h2>
-
-  <div class="d-flex flex-row">
-    <div class="col-sm-8">
-      <div class ="p-2">
-        <p>avatar</p>
-      </div>
-    </div>
-      <div>
-        <p><%= @farm.user.first_name%><%= @farm.user.last_name%></p>
-        <p><%= @farm.laying_farm %></p>
-        <p><%= @farm.address %></p>
-        <p><%= @farm.website_url %></p>
-      </div>
+  <div class="flexbox">
+    <%= image_tag "logo.png" %>
+    <h2>coopswatch</h2>
   </div>
 
 
-   <div class="d-flex flex-row justify-content-between">
-    <div class="p-2">icon 1</div>
-    <div class="p-2">icon item 2</div>
-    <div class="p-2">icon item 3</div>
+  <div>
+    <h4><%= @farm.name %></h4>
+      <div class ="flexbox">
+       <%= image_tag "ch_icon.png" %>
+        <div>
+          <p><%= @farm.user.first_name%><%= @farm.user.last_name%></p>
+          <p><%= @farm.address %></p>
+           <p><%= @farm.website_url %></p>
+        </div>
+      </div>
+
+      <div class ="row justify-content-between">
+        <%= image_tag "egg_icon.png" %>
+        <%= image_tag "egg_icon.png" %>
+        <%= image_tag "egg_icon.png" %>
+      </div>
   </div>
 </div>
-
