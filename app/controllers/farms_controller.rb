@@ -13,7 +13,7 @@ class FarmsController < ApplicationController
 
   def show
     # authorize @farm
-    @marker = @farm.geocoded do |farm|
+    @markers = [@farm].map do |farm|
       {
         lat: farm.latitude,
         lng: farm.longitude
