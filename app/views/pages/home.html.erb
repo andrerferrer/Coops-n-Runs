@@ -1,59 +1,68 @@
-<!---<div class="container text-center">
-  <%= form_tag farms_path, method: :get do %>
-    <%= text_field_tag :query,
-      params[:query],
-      class: "form-control",
+<!-- <div class="container text-center">
+ --><%#= form_tag farms_path, method: :get do %>
+   <%#= text_field_tag :query,
+  #    params[:query],
+   #   class: "form-control",
       placeholder: "Find a farm"
   %>
-  <%= submit_tag "Browse farms", class: "btn btn-primary" %>
-</div>
-<% end %> --->
+  <%#= submit_tag "Browse farms", class: "btn btn-primary" %>
+<!-- </div> -->
+<%#end %>
 
 <!-- search container laying farm -->
-<div class=container text-center>
-  <h3>Please enter a farm code</h3>
-  <%= form_tag farms_path, method: :get do %>
-  <label for="form_of_rearing"></label>
-  <select name="form_of_rearing" id="form_of_rearing">
-    <option value="Organic Rearing">0</option>
-    <option value="Free-range Rearing">1</option>
-    <option value="Barn Rearing">2</option>
-    <option value="cage rearing">3</option>
-  </select>
-  <label for="country"></label>
-  <select name="country" id="country">
-    <option value="Germany">DE</option>
-    <option value="France">FR</option>
-    <option value="United Kingdom">UK</option>
-    <option value="Switzerland">CH</option>
-    <option value="Norway">NO</option>
-    <option value="Bulgary">BG</option>
-    <option value="Portugal">PT</option>
-    <option value="Finnland">FI</option>
-    <option value="Sweden">SE</option>
-    <option value="Austria">AT</option>
-    <option value="Netherlands">NL</option>
-    <option value="Poland">PL</option>
-    <option value="Hungary">HU</option>
-  </select>
-  <div class="container text-center">
+<h3>Please enter a farm code</h3>
+<div class="container">
+  <div class="row justify-content-between">
+    <%= form_tag farms_path, method: :get do %>
+    <div class="col">
+     <label for="form_of_rearing"></label>
+     <select name="form_of_rearing" id="form_of_rearing">
+        <option value="Organic Rearing">0</option>
+        <option value="Free-range Rearing">1</option>
+        <option value="Barn Rearing">2</option>
+        <option value="Cage rearing">3</option>
+     </select>
+    </div>
+    <div class="col">
+     <label for="country"></label>
+     <select name="country" id="country">
+        <option value="Germany">DE</option>
+        <option value="France">FR</option>
+        <option value="United Kingdom">UK</option>
+        <option value="Switzerland">CH</option>
+        <option value="Norway">NO</option>
+        <option value="Bulgary">BG</option>
+        <option value="Portugal">PT</option>
+        <option value="Finnland">FI</option>
+        <option value="Sweden">SE</option>
+        <option value="Austria">AT</option>
+        <option value="Netherlands">NL</option>
+        <option value="Poland">PL</option>
+        <option value="Hungary">HU</option>
+     </select>
+    </div>
+    <div class="col-6">
     <%= text_field_tag :laying_farm,
       params[:laying_farm],
       class: "form-control",
       placeholder: "laying farm number"
     %>
     <%= submit_tag "Search", class: "btn btn-primary" %>
+    <% end %>
   </div>
-  <% end %>
-  <%= image_tag "info_icon.png", class: "icon-bordered", alt: "icon-bordered" %>
+  <span class="icon_info.png"></span>
+  <%= image_tag "info_icon.png" %>
+  </div>
 </div>
+
+
 <!-- Informations container -->
 <div class="container text-align: left ">
   <h3>Where do “my” chickens live? </h3>
-  <p>Do you know where the coop is?</p>
-  <p>What do the runs look like?</p>
-  <p>Is it really an organic farm?</p>
-  <%= image_tag "", class: "image-bordered", alt: "chicken image" %>
+  <p>Do you know where the coop is?<br>
+  What do the runs look like?<br>
+  Is it really an organic farm?</p>
+  <%= image_tag "chickens.png", class: "image-bordered", alt: "chicken image" %>
   <p>Take a closer look at those coops. Some are not as good as they seem, many are better than what the number tells you!</p>
 </div>
 <div class="container text-align: left">
