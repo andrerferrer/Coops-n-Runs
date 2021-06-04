@@ -1,7 +1,11 @@
 .cards {
+  img {
+    width: 100%;
+  }
   display: grid;
   grid-template-columns:1fr 1fr;
-  grid-gap: 4px;
+  grid-gap: 8px;
+  margin-top:20px;
 }
 
 .show {
@@ -21,7 +25,6 @@
 .icon-bar {
   width: 90%;
   margin: 0 auto;
-  margin-bottom: 20px;
   img {
     width: 35px;
   }
