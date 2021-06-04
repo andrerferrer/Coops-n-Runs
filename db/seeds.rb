@@ -345,8 +345,8 @@ Farm.create! ([{
   user_id: User.all.sample.id,
   # created_at:
   # updated_at:
-  # area:
-  # chicken_count: ""
+  area: "1560",
+  chicken_count: "7540"
 }
 ])
 
