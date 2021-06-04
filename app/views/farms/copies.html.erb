@@ -1,0 +1,17 @@
+<div class ="container">
+
+    <h3><%= @farm.name %></h3>
+      <div class ="flexbox">
+       <%= image_tag "account_placeholder.png" %>
+        <div>
+          <p><%= @farm.user.first_name%><%= @farm.user.last_name%></p>
+          <p><%= @farm.address %></p>
+           <p><%= @farm.website_url %></p>
+        </div>
+      </div>
+
+      <div class ="row justify-content-between">
+        <%= image_tag "coop_icon.png" %>
+        <%= image_tag "area_icon.png" %>
+        <%= image_tag "ch_icon.png" %>
+      </div>

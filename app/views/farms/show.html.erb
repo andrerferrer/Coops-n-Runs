@@ -1,28 +1,43 @@
-<div class ="container">
-    <h3><%= @farm.name %></h3>
-      <div class ="flexbox">
-       <%= image_tag "account_placeholder.png" %>
-        <div>
-          <p><%= @farm.user.first_name%><%= @farm.user.last_name%></p>
-          <p><%= @farm.address %></p>
-           <p><%= @farm.website_url %></p>
-        </div>
-      </div>
-
-      <div class ="row justify-content-between">
-        <%= image_tag "coop_icon.png" %>
-        <%= image_tag "area_icon.png" %>
-        <%= image_tag "ch_icon.png" %>
-      </div>
-</div>
-
-<div class ="container">
-<h3>Satellite view</h3>
-    
-    <div id="map"
-        style="width: 100%; height: 600px;"
-        data-markers="<%= @markers.to_json %>"
-        data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
+<div class ="container show">
+  <h3><%= @farm.name %></h3>
+  <div class ="flexbox">
+    <%= image_tag "account_placeholder.png", class: "avatar-large" %>
+    <div>
+      <p><%= @farm.user.first_name%> <%= @farm.user.last_name%></p>
+      <p><%= @farm.address %></p>
+      <a href="#"><p><%= @farm.website_url %></p></a>
     </div>
-</div>
+  </div>
 
+  <div class ="row justify-content-between icon-bar">
+    <div>
+     <%= image_tag "coop_icon.png" %>
+     <p><% @farm.form_of_rearing %></p>
+    </div>
+    <div>
+     <%= image_tag "area_icon.png" %>
+     <p><% @farm.area %></p>
+    </div>
+    <div>
+      <%= image_tag "ch_icon.png" %>
+      <p><% @farm.chicken_count %></p>
+    </div>
+  </div>
+
+
+  <h3>Satellite view</h3>
+  <div id="map"
+      style="width: 100%; height: 200px;"
+      data-markers="<%= @markers.to_json %>"
+      data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
+  </div>
+
+  <h3 class="gallery">Gallery</h3>
+
+  <div class ="cards">
+    <%= image_tag "chicken_2.png" %>
+    <%= image_tag "chicken_2.png" %>
+    <%= image_tag "chicken_3.png" %>
+    <%= image_tag "chicken_4.png" %>
+  </div>
+</div>
