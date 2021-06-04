@@ -1,9 +1,4 @@
-<div class="header with logo">
-   <img src="" />
-  <h1>coopswatch</h1>
-</div>
-
-<div class="container text-center">
+<!---<div class="container text-center">
   <%= form_tag farms_path, method: :get do %>
     <%= text_field_tag :query,
       params[:query],
@@ -12,11 +7,12 @@
   %>
   <%= submit_tag "Browse farms", class: "btn btn-primary" %>
 </div>
-<% end %>
+<% end %> --->
 
-<div class=container-centered>
+<!-- search container laying farm -->
+<div class=container text-center>
   <h3>Please enter a farm code</h3>
-
+  <%= form_tag farms_path, method: :get do %>
   <label for="form_of_rearing"></label>
   <select name="form_of_rearing" id="form_of_rearing">
     <option value="Organic Rearing">0</option>
@@ -41,14 +37,54 @@
     <option value="Hungary">HU</option>
   </select>
   <div class="container text-center">
-    <%= form_tag farms_path, method: :get do %>
-    <%= text_field_tag :query,
-      params[:query],
+    <%= text_field_tag :laying_farm,
+      params[:laying_farm],
       class: "form-control",
       placeholder: "laying farm number"
     %>
     <%= submit_tag "Search", class: "btn btn-primary" %>
   </div>
   <% end %>
-  <img src="" />
+  <%= image_tag "info_icon.png", class: "icon-bordered", alt: "icon-bordered" %>
 </div>
+<!-- Informations container -->
+<div class="container text-align: left ">
+  <h3>Where do “my” chickens live? </h3>
+  <p>Do you know where the coop is?</p>
+  <p>What do the runs look like?</p>
+  <p>Is it really an organic farm?</p>
+  <%= image_tag "", class: "image-bordered", alt: "chicken image" %>
+  <p>Take a closer look at those coops. Some are not as good as they seem, many are better than what the number tells you!</p>
+</div>
+<div class="container text-align: left">
+  <div class="consumer information">
+    <h3>How many eggs do you eat?</h3>
+    <p>Did you know that the average European eats about 220 eggs a year? That is roughly 13kg of eggs. </p>
+  </div>
+  <div class="visualisation">
+  </div>
+</div>
+<div class="container text-align: left">
+  <h3>~116.666.666.666 eggs per year</h3>
+  <p>or 7 million tonnes are produced every year in the EU alone. In one second at least 3 of 366 million hens are laying an egg.</p>
+  <div class="egg icons">
+    <%= image_tag "egg_icon.png", class: "icon-bordered", alt: "icon-bordered" %>
+    <%= image_tag "egg_icon.png", class: "icon-bordered", alt: "icon-bordered" %>
+    <%= image_tag "egg_icon.png", class: "icon-bordered", alt: "icon-bordered" %>
+    <h2>per second</h2>
+  </div>
+  <p>Your fridge would be filled in 20 to 25 minutes. But who needs that many eggs?</p>
+</div>
+<!-- Footer -->
+<footer>
+  <div class="grass-image">
+    <%= image_tag "grass.png", class: "grass-image", alt: "avatar-bordered", style: "float:left" %>
+  </div>
+  <div class="footer-links">
+    <%= image_tag "account_icon.png", class: "avatar-bordered", alt: "avatar-bordered" %>
+    <a href="#">Farmer Login<i class="Farmer Login"></i></a>
+    <a href="#">Sources<i class="Sources"></i></a>
+    <a href="#">Brothers roosters<i class="Brothers roosters"></i></a>
+    <a href="https://www.was-steht-auf-dem-ei.de">KATs Homepage<i class="KAT"></i></a>
+  </div>
+</footer>

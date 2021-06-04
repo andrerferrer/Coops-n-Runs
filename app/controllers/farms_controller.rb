@@ -2,16 +2,24 @@ class FarmsController < ApplicationController
 
   skip_before_action :authenticate_user!, only: [:index, :show]
   before_action :set_farm, only: [:show, :edit]
+  
+  def index
+    # if params[:query].present?
+    #   @farms = Farm.where("name ILIKE @@ :query OR syllabus ILIKE :query", query: "%{params[:query]}%")
+    # else
+    #   @farms = Farm.all
+    # end
+    @farm = Farm.find_by(laying_farm: params[:laying_farm])
+    redirect_to farm_path(@farm.id)
+  end
 
   def show
     # authorize @farm
-  end
-
-  def index
-    if params[:query].present?
-      @farms = Farm.where("name ILIKE @@ :query OR syllabus ILIKE :query", query: "%{params[:query]}%")
-    else
-      @farms = Farm.all
+    @markers = [@farm].map do |farm|
+      {
+        lat: farm.latitude,
+        lng: farm.longitude
+      }
     end
   end
 

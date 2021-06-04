@@ -8,7 +8,7 @@
   <div>
     <h4><%= @farm.name %></h4>
       <div class ="flexbox">
-       <%= image_tag "ch_icon.png" %>
+       <%= image_tag "account_placeholder.png" %>
         <div>
           <p><%= @farm.user.first_name%><%= @farm.user.last_name%></p>
           <p><%= @farm.address %></p>
@@ -17,9 +17,20 @@
       </div>
 
       <div class ="row justify-content-between">
-        <%= image_tag "egg_icon.png" %>
-        <%= image_tag "egg_icon.png" %>
-        <%= image_tag "egg_icon.png" %>
+        <%= image_tag "coop_icon.png" %>
+        <%= image_tag "area_icon.png" %>
+        <%= image_tag "ch_icon.png" %>
       </div>
   </div>
 </div>
+
+<div class ="container">
+<h3>Satellite view</h3>
+    
+    <div id="map"
+        style="width: 100%; height: 600px;"
+        data-markers="<%= @markers.to_json %>"
+        data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
+    </div>
+</div>
+
