@@ -12,35 +12,6 @@
 @import "components/index";
 @import "pages/index";
 
-h1, h3, h4{
-    font-weight: 700;
-    color: #222;
-}
-
-h2 {
-  font-weight: 700;
-  color: #99C24C;
-  font-size: 24px;
-}
-
-h3{
-  font-size: 18px;
-}
-
-p {
-  color: #222;
-  font-size: 14px;
-}
-
-footer a{
-  font-family: "Arvo", 'Courier New', Courier, monospace;
-  font-weight: 700;
-  font-size: 14px;
-  color: #99C24C;
-}
-
-
-
 .flexbox {
   display: flex;
 }

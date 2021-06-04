@@ -8,11 +8,6 @@
   <%#= submit_tag "Browse farms", class: "btn btn-primary" %>
 <!-- </div> -->
 <%#end %>
-<head>
-   <link rel="stylesheet" href="index.css" />
-</head>
-<body>
-
 
 <!-- search container laying farm -->
 <h3>Please enter a farm code</h3>
@@ -25,7 +20,7 @@
         <option value="Organic Rearing">0</option>
         <option value="Free-range Rearing">1</option>
         <option value="Barn Rearing">2</option>
-        <option value="cage rearing">3</option>
+        <option value="Cage rearing">3</option>
      </select>
     </div>
     <div class="col">
@@ -64,10 +59,10 @@
 <!-- Informations container -->
 <div class="container text-align: left ">
   <h3>Where do “my” chickens live? </h3>
-  <p>Do you know where the coop is?</p>
-  <p>What do the runs look like?</p>
-  <p>Is it really an organic farm?</p>
-  <%= image_tag "", class: "image-bordered", alt: "chicken image" %>
+  <p>Do you know where the coop is?<br>
+  What do the runs look like?<br>
+  Is it really an organic farm?</p>
+  <%= image_tag "chickens.png", class: "image-bordered", alt: "chicken image" %>
   <p>Take a closer look at those coops. Some are not as good as they seem, many are better than what the number tells you!</p>
 </div>
 <div class="container text-align: left">
@@ -102,4 +97,3 @@
     <a href="https://www.was-steht-auf-dem-ei.de">KATs Homepage<i class="KAT"></i></a>
   </div>
 </footer>
-</body>
