@@ -1,0 +1,14 @@
+.btn{
+    font-family: "Arvo", 'Courier New';
+    font-weight: 700;
+    margin-top: 16px;
+    width: 100%;
+}
+.btn.round{
+    border-radius: 8px;
+    color: white;
+}
+
+.btn.round.active{
+    color: #5F782F;
+}
