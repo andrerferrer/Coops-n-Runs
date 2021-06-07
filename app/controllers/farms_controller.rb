@@ -9,8 +9,19 @@ class FarmsController < ApplicationController
     # else
     #   @farms = Farm.all
     # end
-    @farm = Farm.find_by(laying_farm: params[:laying_farm])
-    redirect_to farm_path(@farm.id)
+    if params[:laying_farm].present?
+     @farm = Farm.find_by(laying_farm: params[:laying_farm])
+     redirect_to farm_path(@farm.id)
+    elsif params[:form_of_rearing].present?
+      @farms = Farm.where(form_of_rearing: params[:form_of_rearing])
+    else
+      @farms = Farm.all
+    end
+  end
+
+  def new
+    @farm = Farm.new
+    authorize @farm
   end
 
   def show
@@ -21,6 +32,35 @@ class FarmsController < ApplicationController
         lng: farm.longitude
       }
     end
+  end
+
+  def create
+    @farm = Farm.new(farm_params)
+    @farm.user = current_user
+    if @farm.save
+      redirect_to farms_path(@farm)
+    else
+      render :new
+    end
+    authorize @farm
+  end
+
+   def edit
+    @farm = Farm.find(params[:id])
+  end
+
+  def update
+    @farm = Farm.find(params[:id])
+    @farm.update(params[:restaurant])
+    if @farm.save
+      redirect_to farm_path
+    end
+  end
+
+  def destroy
+    @farm = Farm.find(params[:id])
+    @farm.destroy
+    redirect_to farm_path
   end
 
   private

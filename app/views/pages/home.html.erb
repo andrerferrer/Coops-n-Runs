@@ -24,7 +24,7 @@
           <option value="Organic Rearing">0</option>
           <option value="Free-range Rearing">1</option>
           <option value="Barn Rearing">2</option>
-          <option value="Cage rearing">3</option>
+          <option value="Cage Rearing">3</option>
       </select>
     </div>
     
@@ -54,6 +54,16 @@
         placeholder: "laying farm number"
       %>
     </div>
+
+    <div class="p-2">
+     <select name=farm[:form_of_rearing], class="form-control">
+      <option value="None">-Select-</option>
+      <option value="Organic Rearing">Organic Rearing</option>
+      <option value="Free-range Rearing">Free-range Rearing</option>
+      <option value="Barn Rearing">Barn Rearing</option>
+      <option value="Cage Rearing">Cage rearing</option>
+    </select>
+  </div>
 
     <span class="icon_info.png"></span>
     <%= image_tag "info_icon.png" %>
