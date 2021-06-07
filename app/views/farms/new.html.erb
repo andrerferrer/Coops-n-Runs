@@ -5,7 +5,9 @@
     <%= f.input :laying_farm %>
     <%= f.input :name %>
     <%= f.input :website_url %>
-    <%= f.input :address %>
+    <%= f.text_field :street, :placeholder => 'Streetname' %>
+    <%= f.text_field :postcode, :placeholder => 'Postal code' %>
+    <%= f.text_field :city, :placeholder => 'City' %>
     <%#= f.input :country %>
     <%= f.input :form_of_rearing %>
     <%= f.input :area %>
