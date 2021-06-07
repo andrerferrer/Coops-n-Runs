@@ -21,7 +21,6 @@ class FarmsController < ApplicationController
 
   def new
     @farm = Farm.new
-    authorize @farm
   end
 
   def show
@@ -36,13 +35,14 @@ class FarmsController < ApplicationController
 
   def create
     @farm = Farm.new(farm_params)
+    address = params[:farm][:street] + " " + params[:farm][:postcode] + " " + params[:farm][:city]
+    @farm.address = address
     @farm.user = current_user
     if @farm.save
       redirect_to farms_path(@farm)
     else
       render :new
     end
-    authorize @farm
   end
 
    def edit
