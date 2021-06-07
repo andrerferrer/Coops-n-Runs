@@ -2,7 +2,7 @@ class CreateFarms < ActiveRecord::Migration[6.0]
   def change
     create_table :farms do |t|
       t.string :name
-      t.integer :form_of_rearing
+      t.string :form_of_rearing
       t.string :country
       t.string :laying_farm
       t.string :address

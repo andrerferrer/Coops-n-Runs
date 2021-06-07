@@ -1,24 +1,38 @@
-<div class="container">
+<!-- <div class="container">
+  <h3>Search by form of rearing</h3>
+  <%#= form_tag(farms_path, method: "get") do %>
+  <select name=farm[:form_of_rearing], class="form-control">
+    <option value="None">-Select-</option>
+    <option value="Organic Rearing">Organic Rearing</option>
+    <option value="Free-range Rearing">Free-range Rearing</option>
+    <option value="Barn Rearing">Barn Rearing</option>
+    <option value="Cage Rearing">Cage rearing</option>
+  </select>
+</div>
+<%# end %>
+ -->
+
+<!-- <div class="container">
   <div class="row justify-content-center">
     <div class="col-sm-8">
 
-    <%= form_tag farms_path, method: :get do %>
-      <%= text_field_tag :query,
+    <%#= form_tag farms_path, method: :get do %>
+      <%#= text_field_tag :query,
         params[:query],
         class: "form-control",
         placeholder: "Find a farm"
       %>
-      <%= submit_tag "Search", class: "btn btn-primary" %>
-    <% end %>
+      <%#= submit_tag "Search", class: "btn btn-primary" %>
+    <%# end %>
 
       <div id="farms">
-        <% @farms.each do |farm| %>
-          <h4><%= farm.name %></h4>
-          <p><%= farm.form_of_rearing %></p>
-          <p><%= farm.country %></p>
-          <p><%= farm.laying_farm %></p>
-        <% end %>
+        <%# @farms.each do |farm| %>
+          <h4><%#= farm.name %></h4>
+          <p><%#= farm.form_of_rearing %></p>
+          <p><%#= farm.country %></p>
+          <p><%#= farm.laying_farm %></p>
+        <%# end %>
       </div>
     </div>
   </div>
-</div>
+</div> -->
