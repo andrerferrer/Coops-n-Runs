@@ -1,0 +1,12 @@
+<div class="mx-auto w-75 my-5">
+  <h2 class="text-left">Procucer registration</h2>
+  <p class="text-left">Your email will only be used for storing purposes! We won’t sell your data or send you mails.</p>
+  <%= simple_form_for @farm, html: { class: 'w-100' } do |f| %>
+    <%= f.input "First Name" :first_name %>
+    <%= f.input "Last Name" :last_name %>
+    <%= f.input "Your work email" :email %>
+    <%= f.input "Password" :password %>
+    <%= f.input "Repeat Password" :password %>
+    <%= f.submit "Sign up", data: { confirm: "Your are successfully registerd" }%>
+    <%end%>
+</div>

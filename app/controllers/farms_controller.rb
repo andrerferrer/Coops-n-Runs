@@ -21,7 +21,6 @@ class FarmsController < ApplicationController
 
   def new
     @farm = Farm.new
-    authorize @farm
   end
 
   def show
@@ -35,6 +34,7 @@ class FarmsController < ApplicationController
   end
 
   def create
+    raise
     @farm = Farm.new(farm_params)
     @farm.user = current_user
     if @farm.save
