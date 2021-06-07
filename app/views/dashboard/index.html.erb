@@ -1,57 +1,63 @@
-<div class="flexbox">
-  <%= image_tag "account_placeholder.png", class: "avatar-large" %>
-  <h1>Hello <%= current_user.first_name %></h1>
-    <br>
-</div>
+<div class="container">
+  <div class="flexbox header-dashboard">
+    <%= image_tag "account_placeholder.png", class: "avatar-large" %>
+    <h2 class="hello-user">Hello <%= current_user.first_name %></h2>
+    <class="icon"><%= image_tag "edit_icon.png" %>
+      <br>
+  </div>
 
-<h2>See your farms</h2>
+  <h2 class="dashboard-callout">See your farms</h2>
 
 
 
-<div class ="container show">
-  <% @farms.each do |farm| %>
-    <div class="farm-card">
-      <div class ="flexbox">
+  <div class ="show">
+    <% @farms.each do |farm| %>
+      <div class="farm-card">
+        <div class ="flexbox">
 
-        <div>
-          <h3><%= farm.name %></h3>
-          <p><%= farm.address %></p>
-          <a href="#"><p><%= farm.website_url %></p></a>
-        </div>
-
-        <div>
           <div>
+            <h3><%= farm.name %></h3>
+            <p><%= farm.address %></p>
+            <br>
+            <a href="#"><p><%= farm.website_url %></p></a>
+          </div>
+
+          <div class="icon-bar-column">
             <div>
-              <%= image_tag "coop_icon.png" %>
-              <% if farm.form_of_rearing == 0 %>
-                <p>Organic</p>
-              <% elsif farm.form_of_rearing == 1 %>
-                <p>Freerange</p>
-              <% else %>
-                <p>Barn</p>
-              <% end %>
+              <div class="flexbox icon-box-horizontal">
+                <%= image_tag "coop_icon.png" %>
+                <% if farm.form_of_rearing == 0 %>
+                  <p>Organic</p>
+                <% elsif farm.form_of_rearing == 1 %>
+                  <p>Freerange</p>
+                <% else %>
+                  <p>Barn</p>
+                <% end %>
+              </div>
+            </div>
+
+              <div class="flexbox icon-box-horizontal">
+               <%= image_tag "area_icon.png" %>
+               <p><%= farm.area.to_i %>m²</p>
+              </div>
+
+              <div class="flexbox icon-box-horizontal">
+                <%= image_tag "ch_icon.png" %>
+                <p><%= farm.chicken_count %></p>
+              </div>
             </div>
           </div>
 
-            <div>
-             <%= image_tag "area_icon.png" %>
-             <p><%= farm.area.to_i %>m²</p>
-            </div>
-
-            <div>
-              <%= image_tag "ch_icon.png" %>
-              <p><%= farm.chicken_count %></p>
-            </div>
+          <div class ="cards">
+            <%= image_tag "chicken_1.png" %>
+            <%= image_tag "chicken_2.png" %>
+          </div>
+          <div class="flexbox link-div">
+            <%= link_to 'show detailles', farm_path(@farms) %>
+            <%= link_to 'edit', farm_path(@farms) %>
+            <%= link_to 'delete', farm_path(@farms) %>
           </div>
         </div>
-
-        <div class ="cards">
-          <%= image_tag "chicken_1.png" %>
-          <%= image_tag "chicken_2.png" %>
-        </div>
-        <%= link_to 'show', farm_path(@farms) %>
-      </div>
-  <%end%>
+    <%end%>
+  </div>
 </div>
-
-
