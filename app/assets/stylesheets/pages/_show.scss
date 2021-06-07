@@ -1,3 +1,8 @@
+.flexbox {
+  display: flex;
+}
+
+
 .cards {
   img {
     width: 100%;
@@ -9,7 +14,6 @@
 }
 
 .show {
-
   p {
   margin-bottom: 0;
   width: 80%;
@@ -39,4 +43,13 @@
 
 .gallery {
   margin-top: 10px;
+}
+
+.farm-card {
+  border-style: ridge;
+  border-color: green;
+  margin-bottom: 10px;
+}
+
+.icon-bar-column {
 }
