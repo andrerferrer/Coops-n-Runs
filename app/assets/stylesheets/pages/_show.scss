@@ -46,10 +46,36 @@
 }
 
 .farm-card {
-  border-style: ridge;
-  border-color: green;
+  background: #FAFAFA;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
   margin-bottom: 10px;
+  padding: 15px;
 }
 
 .icon-bar-column {
+padding-left: 20px;
+}
+
+.icon-box-horizontal {
+  margin-bottom: 10px;
+}
+
+.hello-user {
+  padding-top: 20px;
+}
+
+.link-div {
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+.header-dashboard {
+  margin-top:20px;
+  padding-top: 10px;
+}
+
+.dashboard-callout {
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
