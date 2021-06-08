@@ -17,7 +17,7 @@ ActiveRecord::Schema.define(version: 2021_06_07_143830) do
 
   create_table "farms", force: :cascade do |t|
     t.string "name"
-    t.integer "form_of_rearing"
+    t.string "form_of_rearing"
     t.string "country"
     t.string "laying_farm"
     t.string "address"
