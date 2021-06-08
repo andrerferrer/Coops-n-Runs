@@ -119,8 +119,10 @@
 
     <%# login logic for footer %>
     <% if user_signed_in? %>
-      <%= image_tag "https://kitt.lewagon.com/placeholder/users/ssaunier", class: "avatar" %>
-      <%= link_to "Log out", destroy_user_session_path, method: :delete %>
+      <div class="logout">
+        <%= image_tag "account_placeholder", class: "avatar" %>
+        <%= link_to "Log out", destroy_user_session_path, method: :delete %>
+      </div>
     <% else %>
         <%= link_to "Farmer login", new_user_session_path %>
     <% end %> <br>
