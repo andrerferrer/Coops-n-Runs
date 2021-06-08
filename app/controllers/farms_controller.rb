@@ -2,7 +2,7 @@ class FarmsController < ApplicationController
 
   skip_before_action :authenticate_user!, only: [:index, :show]
   before_action :set_farm, only: [:show, :edit]
-  
+
   def index
     # if params[:query].present?
     #   @farms = Farm.where("name ILIKE @@ :query OR syllabus ILIKE :query", query: "%{params[:query]}%")
@@ -10,8 +10,8 @@ class FarmsController < ApplicationController
     #   @farms = Farm.all
     # end
     if params[:laying_farm].present?
-     @farm = Farm.find_by(laying_farm: params[:laying_farm])
-     redirect_to farm_path(@farm.id)
+      @farm = Farm.find_by(laying_farm: params[:laying_farm])
+      redirect_to farm_path(@farm.id)
     elsif params[:form_of_rearing].present?
       @farms = Farm.where(form_of_rearing: params[:form_of_rearing])
     else
@@ -45,16 +45,14 @@ class FarmsController < ApplicationController
     end
   end
 
-   def edit
+  def edit
     @farm = Farm.find(params[:id])
   end
 
   def update
     @farm = Farm.find(params[:id])
     @farm.update(params[:restaurant])
-    if @farm.save
-      redirect_to farm_path
-    end
+    redirect_to farm_path if @farm.save
   end
 
   def destroy
