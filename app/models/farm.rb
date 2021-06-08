@@ -5,7 +5,7 @@ class Farm < ApplicationRecord
   validates :country, presence: true
   validates :laying_farm, presence: true
   validates :address, presence: true
-  attr_accessor :postcode, :street, :city
+  attr_accessor :postcode, :street, :city, :country
 
   # added geocoder here, should convert address into lat/long -chris
   geocoded_by :address

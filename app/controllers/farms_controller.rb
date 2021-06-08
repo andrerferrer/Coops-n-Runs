@@ -35,11 +35,11 @@ class FarmsController < ApplicationController
 
   def create
     @farm = Farm.new(farm_params)
-    address = params[:farm][:street] + " " + params[:farm][:postcode] + " " + params[:farm][:city]
+    address = params[:farm][:street] + " " + params[:farm][:postcode] + " " + params[:farm][:city] + " " + params[:farm][:country]
     @farm.address = address
     @farm.user = current_user
     if @farm.save
-      redirect_to farms_path(@farm)
+      redirect_to farm_path(@farm)
     else
       render :new
     end
