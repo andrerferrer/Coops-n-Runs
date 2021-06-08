@@ -2,19 +2,46 @@
   <h2 class="text-left">Register your farm</h2>
   <p class="text-left">Your email will only be used for storing purposes! We won’t sell your data or send you mails.</p>
   <%= simple_form_for @farm, html: { class: 'w-100' } do |f| %>
-    <%= f.input :laying_farm %>
-    <%= f.input :name %>
+    <%= f.input :laying_farm, 
+                required: true,
+                autofocus: true,
+                input_html: { autocomplete: "laying_farm" }%>
+    <%= f.input :name, 
+                required: true,
+                autofocus: true,
+                input_html: { autocomplete: "name" }%>
     <%= f.input :website_url %>
-    <%= f.label "Address" %>
-    <%= f.text_field :street, :placeholder => 'Streetname' %>
-    <%= f.text_field :postcode, :placeholder => 'Postal code' %>
-    <%= f.text_field :city, :placeholder => 'City' %>
-    <%= f.text_field :country, :placeholder => 'Country' %>
+    <%= f.label "Address" %> <br>
+    <%= f.text_field :street, 
+                required: true,
+                autofocus: true, 
+                :placeholder => 'Streetname' %>
+    <%= f.text_field :postcode, 
+                required: true,
+                autofocus: true,
+                :placeholder => 'Postal code' %>
+    <%= f.text_field :city, 
+                required: true,
+                autofocus: true,
+                :placeholder => 'City' %>
+    <%= f.text_field :country, 
+                required: true,
+                autofocus: true,
+                :placeholder => 'Country' %>
     <%#= f.input :country %>
-    <%= f.input :form_of_rearing %>
-    <%= f.input :area %>
-    <%= f.input :chicken_count %>
+    <%= f.input :form_of_rearing, 
+                required: true,
+                autofocus: true,
+                input_html: { autocomplete: "form_of_rearing" }%>
+    <%= f.input :area, 
+                required: true,
+                autofocus: true,
+                input_html: { autocomplete: "area" }%>
+    <%= f.input :chicken_count, 
+                required: true,
+                autofocus: true,
+                input_html: { autocomplete: "chicken_count" }%>
     <%= f.input :description, as: :text %>
-    <%= f.submit "Save", data: { confirm: "Farm has been saved succesfully!" }%>
+    <%= f.submit "Save", class:"btn round btn-primary", data: { confirm: "Farm has been saved succesfully!" }%>
     <% end %>
 </div>
