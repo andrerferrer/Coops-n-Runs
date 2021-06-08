@@ -348,7 +348,9 @@ Farm.create! ([{
   # created_at:
   # updated_at:
   area: "1560",
-  chicken_count: "7540"
+  chicken_count: "7540",
+  description: "Family owned business for 2 generations in the south of Mecklenburg-Western Pomerania.
+  Our chickens love the wide plains here."
 }
 ])
 
