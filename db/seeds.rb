@@ -5,17 +5,19 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+puts 'Deleting users...'
 User.destroy_all
+puts 'Deleting farms...'
 Farm.destroy_all
 
-puts 'creating users'
+puts 'Creating users...'
 User.create! ([
  {first_name: "Christian", last_name: "Boehme", email: "christian@lewagon.com", password: "123456"},
  {first_name: "Györgyi", last_name: "Farkas", email: "györgyi@lewagon.com", password: "123456"},
  {first_name: "Lisa", last_name: "Keßler", email: "lisa@lewagon.com", password: "123456"}
 ])
 
-puts 'creating farms'
+puts 'Creating farms...'
 Farm.create! ([{
   name: "Geflügelhof Martin Zapf",
   form_of_rearing: "Free-range Rearing",
@@ -350,4 +352,4 @@ Farm.create! ([{
 }
 ])
 
-puts 'We are ready'
+puts 'We are ready!'
