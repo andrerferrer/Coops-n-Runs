@@ -1,0 +1,5 @@
+meta_product_name: "Coopswatch"
+meta_title: "Coopswatch - Look at all those chickens!"
+meta_description: "Look up where your eggs are layed, how your chickens live and if you think those organic hens live better than the free-range ones? How do the pastures look like? Is there sand, shade? Are the coops appropriatly sized?"
+meta_image: "cover.png" # should exist in `app/assets/images/`
+twitter_account: "@coopswatch_twitter_account"   # required for Twitter Cards
