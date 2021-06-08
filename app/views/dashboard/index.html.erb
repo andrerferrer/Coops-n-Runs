@@ -1,13 +1,13 @@
 <div class="container">
-  <div class="flexbox header-dashboard">
-    <%= image_tag "account_placeholder.png", class: "avatar-large" %>
-    <h2 class="hello-user">Hello <%= current_user.first_name %></h2>
-    <class="icon"><%= image_tag "edit_icon.png" %>
-      <br>
-  </div>
-
-  <h2 class="dashboard-callout">See your farms</h2>
-
+    <div class="flexbox header-dashboard">
+      <%= image_tag "account_placeholder.png", class: "avatar-large" %>
+      <div>
+        <h2 class="hello-user">Hello <%= current_user.first_name %></h2>
+        <p class="green"><%= @current_user.email %></p>
+        <p>Family owned business for 2 generations in the south of Mecklenburg-Western Pomerania. Our chickens love the wide plains here.</p>
+      </div>
+      <%= image_tag "edit_icon.png", class: "edit-icon-dashboard "  %>
+    </div>
 
 
   <div class ="show">
@@ -19,7 +19,7 @@
             <h3><%= farm.name %></h3>
             <p><%= farm.address %></p>
             <br>
-            <a href="#"><p><%= farm.website_url %></p></a>
+            <p class="green"><a href="#"><p><%= farm.website_url %></p></a>
           </div>
 
           <div class="icon-bar-column">
@@ -53,9 +53,10 @@
             <%= image_tag "chicken_2.png" %>
           </div>
           <div class="flexbox link-div">
-            <%= link_to 'show detailles', farm_path(@farms) %>
-            <%= link_to 'edit', farm_path(@farms) %>
-            <%= link_to 'delete', farm_path(@farms) %>
+            <%= link_to "Show details", farm_path(farm), class: "btn round btn-primary" %>
+            <%= link_to "Edit", edit_farm_path(farm), class: "dashboard-link" %>
+            <%= link_to "Delete", farm_path(farm), method: :delete, class: "dashboard-link" %>
+
           </div>
         </div>
     <%end%>
