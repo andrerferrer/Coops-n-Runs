@@ -4,11 +4,18 @@
       <div>
         <h2 class="hello-user">Hello <%= current_user.first_name %></h2>
         <p class="green"><%= @current_user.email %></p>
-        <p>Family owned business for 2 generations in the south of Mecklenburg-Western Pomerania. Our chickens love the wide plains here.</p>
+<!--         <p>Family owned business for 2 generations in the south of Mecklenburg-Western Pomerania. Our chickens love the wide plains here.</p>
+
+ -->
+        <p><%= @farms_description %></p>
       </div>
       <%= link_to(edit_user_registration_path) do %>
-       <%= image_tag "edit_icon.png", class: "edit-icon-dashboard "  %>
+        <%= image_tag "edit_icon.png", class: "edit-icon-dashboard "  %>
       <% end %>
+    </div>
+
+    <div>
+      <%= link_to "Add farm", new_farm_path, class: "btn round btn-primary item-center" %>
     </div>
 
 
