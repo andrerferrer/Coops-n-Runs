@@ -6,7 +6,9 @@
         <p class="green"><%= @current_user.email %></p>
         <p>Family owned business for 2 generations in the south of Mecklenburg-Western Pomerania. Our chickens love the wide plains here.</p>
       </div>
-      <%= image_tag "edit_icon.png", class: "edit-icon-dashboard "  %>
+      <%= link_to(edit_user_registration_path) do %>
+       <%= image_tag "edit_icon.png", class: "edit-icon-dashboard "  %>
+      <% end %>
     </div>
 
 
