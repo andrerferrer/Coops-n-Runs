@@ -57,11 +57,11 @@
 
     <div class="p-2">
      <select name=farm[:form_of_rearing], class="form-control">
-      <option value="None">-Select-</option>
-      <option value="Organic Rearing">Organic Rearing</option>
-      <option value="Free-range Rearing">Free-range Rearing</option>
-      <option value="Barn Rearing">Barn Rearing</option>
-      <option value="Cage Rearing">Cage rearing</option>
+      <option value="None">Select</option>
+      <option value="Organic Rearing">Organic</option>
+      <option value="Free-range Rearing">Free-range</option>
+      <option value="Barn Rearing">Barn</option>
+      <option value="Cage Rearing">Cage</option>
     </select>
   </div>
 
@@ -70,7 +70,7 @@
 
   </div>
     <div class="col-12">
-      <%= submit_tag "Search", class: "btn round btn-primary" %>
+      <%= submit_tag "Search", class: "btn round btn-primary col-12" %>
       <% end %>
     </div>
   </div>
@@ -120,7 +120,8 @@
     <%# login logic for footer %>
     <% if user_signed_in? %>
       <div class="logout">
-        <%= image_tag "account_placeholder", class: "avatar" %>
+        <%= image_tag "account_placeholder", class: "avatar" %> <br>
+        <%= link_to "My Farms", dashboard_index_path %> <br>
         <%= link_to "Log out", destroy_user_session_path, method: :delete %>
       </div>
     <% else %>
@@ -129,6 +130,6 @@
 
     <a href="#">Sources<i class="Sources"></i></a><br>
     <a href="https://brudertier.bio/bruderhahn/garantie">Brother Roosters<i class="Brothers roosters"></i></a><br>
-    <a href="https://www.was-steht-auf-dem-ei.de">KATs Homepage<i class="KAT"></i></a>
+    <a href="https://www.was-steht-auf-dem-ei.de">KAT Homepage<i class="KAT"></i></a>
   </div>
 </footer>
